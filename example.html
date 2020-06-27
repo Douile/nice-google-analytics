@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Nice GA Example</title>
-  <script src="/src/nicega.js?id=UA-98384710-12" async="" defer=""></script>
+  <script src="https://raw.githubusercontent.com/Douile/nice-google-analytics/master/src/nicega.min.js?id=UA-98384710-13" async="" defer=""></script>
 </head>
 <style>
 body {
@@ -17,4 +17,7 @@ body {
 </style>
 <body>
 <p>Nice-google-analytics example page</p>
+<noscript>Javascript is required</noscript>
+<p>If the dialog isn't showing you may be blocking GA with your privacy settings, or have already accepted or rejected</p>
+<p>Click <button onclick="localStorage.removeItem('_GA_CONSENT');location.reload();">here</button> to clear your choice to show dialog again</p>
 </body>
