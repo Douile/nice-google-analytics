@@ -12,7 +12,7 @@ This simple script is designed to make it easy to do just that.
 ## How to add
 Add the following to your HTML
 ```html
-<script src="https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.0/src/nicega.min.js?id=UA-MY-ID-HERE" async="" defer=""></script>
+<script src="https://cdn.jsdelivr.net/gh/douile/nice-google-analytics/src/nicega.min.js?id=UA-MY-ID-HERE" async="" defer=""></script>
 ```
 And change the UA-MY-ID-HERE to your GA tracking ID
 
@@ -33,7 +33,7 @@ You can change the colors used by nice-google-analytics in your current css styl
 
 e.g.
 ```html
-<script src="https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.0/src/nicega.min.js?id=UA-MY-ID-HERE&key=HAS_GA_CONSENT" async="" defer=""></script>
+<script src="https://cdn.jsdelivr.net/gh/douile/nice-google-analytics/src/nicega.min.js?id=UA-MY-ID-HERE&key=HAS_GA_CONSENT" async="" defer=""></script>
 ```
 
 The users consent status is stored in localStorage at the key set (default `_GA_CONSENT`) so by changing this value to `true` or `false` you can control consent automatically, or if you wish to show the dialog again you can delete the key.
