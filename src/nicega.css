@@ -10,7 +10,7 @@
   left: 0;
   width: 100vw;
   height: 10vh;
-  animation: ga-slide-in-bottom -bottom 1s ease;
+  animation: ga-slide-in-bottom 1s ease;
   border: 0;
   border-radius: 10px 10px 0px 0px;
   justify-content: space-around;
