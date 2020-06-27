@@ -67,13 +67,13 @@ Compliant with the license you may copy this script to your own domain, meaning 
 - _You could also you the integrity for `nicega.min.css` here_
 
 ### Integrity
-Below is a list of integrity hashes for the various scripts and versions
+Below is a list of integrity hashes for the various scripts and versions (Also sizes)
 
-| Version | Script            | Integrity | URL |
-| :-----: | :---------------- | :-------- | :-- |
-| 1.1     | `nicega.js`       | `sha512-hbuNlBzsx/nk4tpa0zPjkUWMp0+OiURha/snN1yNX3awZ8q8xHUCOkkEEwc8sQ9d/btUj5CgVkdcYys4e12l6w==` | `https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.1/src/nicega.js`
-| 1.1     | `nicega.min.js`   | `sha512-D8z5o03OF4Q0viTL+OtgKGeZY3zMb7EOtUMhfOvUvfpaYWwiKF2j+TaXUnWkn+qSqwwmHgtvwwvRsdXl2jEq0Q==` | `https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.1/src/nicega.min.js`
-| 1.1     | `nicega.min.css`  | `sha512-DQwhnBMIFHMvcFRlbgKqupx8zLPPB+3f77mjTzxQ7FDf4TRoqDrQgMJZWDLGq8IoEfujCH9qZyHvwA2TBQP90Q==` | local (see generatecss.sh)
-| 1.0     | `nicega.js`       | `sha512-iLHBHF8Qkw52WEKQftHBvakKUqWXGGaAcohLDehDJsqJPjOilV3jH7cdzD4RvCg0cJclkKy2sQ8toU3aPdcWdg=` | `https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.0/src/nicega.js`
-| 1.0     | `nicega.min.js`   | `sha512-Gyt9WuZpL7XQ9W4toymzrcMR2BJJrs8ubK6n4NxvGFak4GvGSrrtfigK3ddt0e4E3WK87ySnKhHKoZxLSgpwcQ==` | `https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.0/src/nicega.min.js`
-| 1.0     | `nicega.min.css`  | `sha512-36lAgmhNoaCsrUsya6wyv2PrMtVbA77Cy+6mOWyLCq6orMAr6kSVPM6N18ZPD/p+17saP9kVVjFlMhkd0c0Jyw==` | local (see generatecss.sh)
+| Version       | Script            | Integrity | URL |
+| :-----------: | :---------------- | :-------- | :-- |
+| 1.1 (2.69kb)  | `nicega.js`       | `sha512-hbuNlBzsx/nk4tpa0zPjkUWMp0+OiURha/snN1yNX3awZ8q8xHUCOkkEEwc8sQ9d/btUj5CgVkdcYys4e12l6w==` | `https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.1/src/nicega.js`
+| 1.1 (2.63kb)  | `nicega.min.js`   | `sha512-D8z5o03OF4Q0viTL+OtgKGeZY3zMb7EOtUMhfOvUvfpaYWwiKF2j+TaXUnWkn+qSqwwmHgtvwwvRsdXl2jEq0Q==` | `https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.1/src/nicega.min.js`
+| 1.1           | `nicega.min.css`  | `sha512-DQwhnBMIFHMvcFRlbgKqupx8zLPPB+3f77mjTzxQ7FDf4TRoqDrQgMJZWDLGq8IoEfujCH9qZyHvwA2TBQP90Q==` | local (see generatecss.sh)
+| 1.0 (2.61kb)  | `nicega.js`       | `sha512-iLHBHF8Qkw52WEKQftHBvakKUqWXGGaAcohLDehDJsqJPjOilV3jH7cdzD4RvCg0cJclkKy2sQ8toU3aPdcWdg=` | `https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.0/src/nicega.js`
+| 1.0 (2.33kb)  | `nicega.min.js`   | `sha512-Gyt9WuZpL7XQ9W4toymzrcMR2BJJrs8ubK6n4NxvGFak4GvGSrrtfigK3ddt0e4E3WK87ySnKhHKoZxLSgpwcQ==` | `https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.0/src/nicega.min.js`
+| 1.0          | `nicega.min.css`  | `sha512-36lAgmhNoaCsrUsya6wyv2PrMtVbA77Cy+6mOWyLCq6orMAr6kSVPM6N18ZPD/p+17saP9kVVjFlMhkd0c0Jyw==` | local (see generatecss.sh)
