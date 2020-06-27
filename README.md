@@ -12,7 +12,7 @@ This simple script is designed to make it easy to do just that.
 ## How to add
 Add the following to your HTML
 ```html
-<script src="https://raw.githubusercontent.com/Douile/nice-google-analytics/master/src/nicega.min.js?id=UA-MY-ID-HERE" async="" defer=""></script>
+<script src="https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.0/src/nicega.min.js?id=UA-MY-ID-HERE" async="" defer=""></script>
 ```
 And change the UA-MY-ID-HERE to your GA tracking ID
 
@@ -33,7 +33,7 @@ You can change the colors used by nice-google-analytics in your current css styl
 
 e.g.
 ```html
-<script src="https://raw.githubusercontent.com/Douile/nice-google-analytics/master/src/nicega.min.js?id=UA-MY-ID-HERE&key=HAS_GA_CONSENT" async="" defer=""></script>
+<script src="https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.0/src/nicega.min.js?id=UA-MY-ID-HERE&key=HAS_GA_CONSENT" async="" defer=""></script>
 ```
 
 The users consent status is stored in localStorage at the key set (default `_GA_CONSENT`) so by changing this value to `true` or `false` you can control consent automatically, or if you wish to show the dialog again you can delete the key.
@@ -51,7 +51,7 @@ View the example [here](example.html) or live example [here](https://douile.gith
 ### CSP
 Below is a list of the sources you need to add to your CSP (_if you use it_)
 
-Compliant with the license you may copy this script to your own domain, meaning you do not need the `raw.githubusercontent.com` script-src
+Compliant with the license you may copy this script to your own domain, meaning you do not need the `cdn.jsdelivr.net` script-src
 
 **default-src**
 - `www.googletagmanager.com`
@@ -59,7 +59,7 @@ Compliant with the license you may copy this script to your own domain, meaning 
 **script-src**
 - `www.googletagmanager.com`
 - `www.google-analytics.com`
-- `raw.githubusercontent.com`
+- `cdn.jsdelivr.net`
 
 **style-src**
 - `'self'`
@@ -71,6 +71,6 @@ Below is a list of integrity hashes for the various scripts and versions
 
 | Version | Script | Integrity | URL |
 | :-----: | :----- | :-------- | :-- |
-| 1.0     | `nicega.js` | `sha512-iLHBHF8Qkw52WEKQftHBvakKUqWXGGaAcohLDehDJsqJPjOilV3jH7cdzD4RvCg0cJclkKy2sQ8toU3aPdcWdg=` | `https://raw.githubusercontent.com/Douile/nice-google-analytics/1.0/src/nicega.js`
-| 1.0     | `nicega.min.js` | `sha512-Gyt9WuZpL7XQ9W4toymzrcMR2BJJrs8ubK6n4NxvGFak4GvGSrrtfigK3ddt0e4E3WK87ySnKhHKoZxLSgpwcQ==` | `https://raw.githubusercontent.com/Douile/nice-google-analytics/1.0/src/nicega.min.js`
-| 1.0     | `nicega.min.css` | `sha512-36lAgmhNoaCsrUsya6wyv2PrMtVbA77Cy+6mOWyLCq6orMAr6kSVPM6N18ZPD/p+17saP9kVVjFlMhkd0c0Jyw==` | `https://raw.githubusercontent.com/Douile/nice-google-analytics/1.0/src/nicega.min.css`
+| 1.0     | `nicega.js` | `sha512-iLHBHF8Qkw52WEKQftHBvakKUqWXGGaAcohLDehDJsqJPjOilV3jH7cdzD4RvCg0cJclkKy2sQ8toU3aPdcWdg=` | `https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.0/src/nicega.js`
+| 1.0     | `nicega.min.js` | `sha512-Gyt9WuZpL7XQ9W4toymzrcMR2BJJrs8ubK6n4NxvGFak4GvGSrrtfigK3ddt0e4E3WK87ySnKhHKoZxLSgpwcQ==` | `https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.0/src/nicega.min.js`
+| 1.0     | `nicega.min.css` | `sha512-36lAgmhNoaCsrUsya6wyv2PrMtVbA77Cy+6mOWyLCq6orMAr6kSVPM6N18ZPD/p+17saP9kVVjFlMhkd0c0Jyw==` | `https://cdn.jsdelivr.net/gh/douile/nice-google-analytics@1.0/src/nicega.min.css`
