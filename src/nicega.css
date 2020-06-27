@@ -10,7 +10,7 @@
   left: 0;
   width: 100vw;
   height: 10vh;
-  animation: slide-in-bottom 1s ease;
+  animation: ga-slide-in-bottom -bottom 1s ease;
   border: 0;
   border-radius: 10px 10px 0px 0px;
   justify-content: space-around;
@@ -43,6 +43,15 @@
 
 .ga-dialog-decline:hover {
   background-color: var(--ga-decline);
+}
+
+@keyframes ga-slide-in-bottom {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 * {
