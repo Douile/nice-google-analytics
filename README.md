@@ -12,11 +12,40 @@ This simple script is designed to make it easy to do just that.
 ## How to add
 Add the following to your HTML
 ```html
-<script src="" async="" defer=""></script>
+<script src="https://raw.githubusercontent.com/Douile/nice-google-analytics/master/src/nicega.min.js?id=UA-MY-ID-HERE" async="" defer=""></script>
+```
+And change the UA-MY-ID-HERE to your GA tracking ID
+
+## How to style
+You can change the colors used by nice-google-analytics in your current css stylesheet, all you need to is add this rule and change the colors.
+```css
+* {
+  --ga-background: #1a1e1c;
+  --ga-foreground: #ffffff;
+  --ga-accept: #308732;
+  --ga-decline: #d32f2f;
+}
+```
+
+## How to control
+- Set your GA tracking id with query param `id`
+- Set the localStorage key used with query param `key` (defaults to `_GA_CONSENT`)
+
+e.g.
+```html
+<script src="https://raw.githubusercontent.com/Douile/nice-google-analytics/master/src/nicega.min.js?id=UA-MY-ID-HERE&key=HAS_GA_CONSENT" async="" defer=""></script>
+```
+
+The users consent status is stored in localStorage at the key set (default `_GA_CONSENT`) so by changing this value to `true` or `false` you can control consent automatically, or if you wish to show the dialog again you can delete the key.
+```javascript
+// Show the dialog again (after reload)
+localStorage.removeItem('_GA_CONSENT');
+// Force the user to decline (after reload)
+localStorage.setItem('_GA_CONSENT', 'false');
 ```
 
 ## Example
-View the example [here](example.html)
+View the example [here](example.html) or live example [here](https://douile.github.io/nice-google-analytics/example.html) (_you may not see the popup if GA is blocked_)
 
 ## Security
 ### CSP
@@ -42,6 +71,6 @@ Below is a list of integrity hashes for the various scripts and versions
 
 | Version | Script | Integrity | URL |
 | :-----: | :----- | :-------- | :-- |
-| 1.0     | `nicega.js` | `sha512-iLHBHF8Qkw52WEKQftHBvakKUqWXGGaAcohLDehDJsqJPjOilV3jH7cdzD4RvCg0cJclkKy2sQ8toU3aPdcWdg=`
-| 1.0     | `nicega.min.js` | `sha512-Gyt9WuZpL7XQ9W4toymzrcMR2BJJrs8ubK6n4NxvGFak4GvGSrrtfigK3ddt0e4E3WK87ySnKhHKoZxLSgpwcQ==`
-| 1.0     | `nicega.min.css` | `sha512-36lAgmhNoaCsrUsya6wyv2PrMtVbA77Cy+6mOWyLCq6orMAr6kSVPM6N18ZPD/p+17saP9kVVjFlMhkd0c0Jyw==`
+| 1.0     | `nicega.js` | `sha512-iLHBHF8Qkw52WEKQftHBvakKUqWXGGaAcohLDehDJsqJPjOilV3jH7cdzD4RvCg0cJclkKy2sQ8toU3aPdcWdg=` | `https://raw.githubusercontent.com/Douile/nice-google-analytics/1.0/src/nicega.js`
+| 1.0     | `nicega.min.js` | `sha512-Gyt9WuZpL7XQ9W4toymzrcMR2BJJrs8ubK6n4NxvGFak4GvGSrrtfigK3ddt0e4E3WK87ySnKhHKoZxLSgpwcQ==` | `https://raw.githubusercontent.com/Douile/nice-google-analytics/1.0/src/nicega.min.js`
+| 1.0     | `nicega.min.css` | `sha512-36lAgmhNoaCsrUsya6wyv2PrMtVbA77Cy+6mOWyLCq6orMAr6kSVPM6N18ZPD/p+17saP9kVVjFlMhkd0c0Jyw==` | `https://raw.githubusercontent.com/Douile/nice-google-analytics/1.0/src/nicega.min.css`
